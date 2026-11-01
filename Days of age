@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, c ;
+  cout << "Enter your exact age :" << endl;
+  cout << "Years " ;
+  cin >> a ;
+  cout << "Months " ;
+  cin >> b ;
+  cout << "Days " ;
+  cin >> c ;
+  cout << "Days of your age is : " << (a*365)+(b*30)+c ;
+  
+  return 0;
+}
