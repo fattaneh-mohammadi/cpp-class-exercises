@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+int a, b , c ;
+cout << "Lets solve this equation together: " ;
+cout << "\n ax+b=c" ;
+cout << "\nSo ..." ;
+cout << "\nEnter a" << endl ;
+cin >> a ;
+cout << "Enter b" << endl ;
+cin >> b ;
+cout << "Enter c" << endl ;
+cin >> c ;
+    if (a != 0) {
+        cout << "x = " << ((c-b)/a) ; }
+        else if (c - b == 0) {
+        cout << "x = 0" << endl; }
+        else if (a = 0) {
+        cout << "x = 0" ; }
+    return 0;
+}
