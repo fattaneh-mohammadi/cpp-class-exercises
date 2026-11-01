@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a ;
+  cout << "Age!" << endl;
+  cin >> a ;
+  cout << "Years : " << a / 365 ;
+  cout << "\nMonths : " << (( a % 365 ) / 30) ;
+  cout << "\nDay : " << (( a % 365 ) % 30) ;
+  return 0;
+}
