@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int number;
+  char ch;
+  cout << "Welcome to 780." << endl ;
+  cout << "Press 1 if you want to install 780's app" << endl;
+  cout << "Press 2, if you want Internet!" << endl;
+  cin >> number;
+  switch (number)
+  {
+    case 1 : cout << "1) Install" << endl;
+                 cin >> ch;
+                 if (ch == '1') {
+                 cout << "You will get a link ";
+                 cout << "\nSuccessfuly Sent "; }
+                 else
+                 cout << "Back to menu …" ;break; 
+    case 2 : cout << "2) Internet" << endl ;
+             cout << "Enter one of the below numbers" << endl; cout << "1. 10GB" << endl; cout << "2. 20GB" << endl; cout << "3. 30GB" << endl;
+                          cin >> ch ;
+                          if (ch == '1')
+                          cout << "Congrats, you've got 10 GB Internet" ;
+                          else if (ch == '2')
+                          cout << "Congrats, you've got 20 GB Internet" ;
+                          else if (ch == '3')
+                          cout << "Congrats, you've got 30 GB Internet";
+    default : cout << "Back to menu …";
+  }
+  return 0;
+}
