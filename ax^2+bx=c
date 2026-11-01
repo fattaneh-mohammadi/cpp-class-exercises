@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+
+int a, b , c ;
+cout << "Lets solve this equation together: " ;
+cout << "\n ax^2+b=c" ;
+cout << "\nSo ..." ;
+cout << "\nEnter a" << endl ;
+cin >> a ;
+cout << "Enter b" << endl ;
+cin >> b ;
+cout << "Enter c" << endl ;
+cin >> c ;
+
+if (a != 0)
+    cout << "x = " << ((-b + sqrt (pow (b , 2) - 4*a*c)) / 2*a ) ;
+    else if (a == 0 && b != 0 && c != 0)
+    cout << "x = " << c / b ;
+    else if (a == 0 && b == 0 && c != 0)
+    cout << "x = 0 " ;
+    else if (a == 0 && b != 0 && c == 0)
+    cout << "x = 0 " ;
+    
+ return 0;
+}
